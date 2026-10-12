@@ -7,7 +7,7 @@ Task: **text classification for an African language**: assign a Kinyarwanda news
 
 | Resource | Link |
 |---|---|
-| GitHub repository | TODO: add this repo's URL |
+| GitHub repository | TODO: https://github.com/bianca255/kinnews-classifier |
 | Demo video | TODO: add video URL |
 | Fine-tuned model (Hugging Face) | https://huggingface.co/Bianca255/kinnews-afroxlmr |
 | Live system | Temporary Gradio link, only while the Colab session runs (see [Deployment](#deployment)). TODO: add link if still active at submission |
