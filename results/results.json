@@ -1,0 +1,7 @@
+[
+  {"name": "baseline_tfidf_logreg", "val_macro_f1": 0.7246, "test_acc": 0.7809, "test_macro_f1": 0.7060},
+  {"name": "exp1_afroxlmr_3ep_lr2e-5_len256_bs16", "val_macro_f1": 0.6871, "test_acc": 0.7789, "test_macro_f1": 0.6567},
+  {"name": "exp2_6ep_lr2e-5_len256_bs16", "val_macro_f1": 0.7298, "test_acc": 0.7754, "test_macro_f1": 0.6750},
+  {"name": "exp3_6ep_weighted_len256_bs16", "val_macro_f1": 0.7223, "test_acc": 0.7804, "test_macro_f1": 0.6894},
+  {"name": "exp4_6ep_len512_bs8_FINAL", "val_macro_f1": 0.7390, "test_acc": 0.7908, "test_macro_f1": 0.6907}
+]
