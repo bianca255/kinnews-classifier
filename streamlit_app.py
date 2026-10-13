@@ -1,4 +1,3 @@
-import pandas as pd
 import streamlit as st
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
@@ -36,5 +35,9 @@ if st.button("Classify"):
             probs = torch.softmax(model(**enc).logits, dim=-1)[0]
         scores = {model.config.id2label[i]: float(p) for i, p in enumerate(probs)}
         top5 = sorted(scores.items(), key=lambda kv: kv[1], reverse=True)[:5]
+
         st.subheader(f"Predicted topic: {top5[0][0]}")
-        st.bar_chart(pd.DataFrame(top5, columns=["topic", "probability"]).set_index("topic"))
+        for label, p in top5:
+            left, right = st.columns([1, 3])
+            left.write(f"{label}: {p:.1%}")
+            right.progress(min(max(p, 0.0), 1.0))
