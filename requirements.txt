@@ -1,11 +1,5 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
 torch
 transformers
-datasets
-accelerate
-evaluate
-scikit-learn
+streamlit
 pandas
-numpy
-sentencepiece
-gradio
-huggingface_hub
