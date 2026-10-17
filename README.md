@@ -76,7 +76,7 @@ Experiments 1-3 used batch size 16 and experiment 4 used batch size 8. Full numb
 
 ## Deployment
 
-The model is hosted on the Hugging Face Hub and served through a Gradio interface. The free Hugging Face Gradio Space tier requires a PRO subscription, so the app is not permanently hosted. It is run from Colab with a temporary `gradio.live` link, which stops working when the session ends. The demo video shows the full workflow.
+The final checkpoint (Exp 4, epoch 5) is hosted on the Hugging Face Hub (Bianca255/kinnews-afroxlmr). The interface is a Streamlit app (streamlit_app.py in the repository) deployed on Streamlit Community Cloud.
 
 ## Limitations
 
