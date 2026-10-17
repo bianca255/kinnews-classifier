@@ -1,6 +1,5 @@
 # Kinyarwanda News Topic Classification (KINNEWS + AfroXLMR)
 
-Individual NLP capstone, African Leadership University (Summative Project Sep26).
 Task: **text classification for an African language**: assign a Kinyarwanda news article to one of 14 topics.
 
 ## Project links
@@ -11,7 +10,7 @@ Task: **text classification for an African language**: assign a Kinyarwanda news
 | Demo video | TODO: add video URL |
 | Fine-tuned model (Hugging Face) | https://huggingface.co/Bianca255/kinnews-afroxlmr |
 | Live system | https://kin-news-topics-bianca255.streamlit.app |
-| Report | TODO: add link or file name |
+
 
 ## Problem
 
@@ -73,20 +72,7 @@ Experiments 1-3 used batch size 16 and experiment 4 used batch size 8. Full numb
     └── results.json        # numbers for every experiment
 ```
 
-## How to reproduce
 
-1. Open `notebooks/kinnews_classification.ipynb` in Google Colab and set the runtime to **T4 GPU**.
-2. Run the cells in order: install packages, load the dataset, create the splits and save them to `data/`, run the TF-IDF baseline, then the fine-tuning experiments.
-3. Install dependencies locally with `pip install -r requirements.txt` if running outside Colab.
-
-## Run the web app
-
-```bash
-pip install -r requirements.txt
-python app.py
-```
-
-This downloads the fine-tuned model from `Bianca255/kinnews-afroxlmr` (about 1 GB) and starts a local Gradio app. In Colab, change the last line of `app.py` to `demo.launch(share=True)` to get a temporary public link.
 
 ## Deployment
 
@@ -100,11 +86,6 @@ The model is hosted on the Hugging Face Hub and served through a Gradio interfac
 - The model always predicts one of 14 news topics, even for text outside the news domain.
 - Results come from a single run per configuration (seed 42), so small differences between experiments may be within noise.
 
-## Existing resources vs my own work
-
-**Existing resources used:** the KINNEWS dataset and its Hugging Face mirror; the pretrained AfroXLMR model; the Hugging Face Transformers, Datasets, Hugging Face Hub, scikit-learn, PyTorch and Gradio libraries.
-
-**My own work:** the train/validation split, data checks, the TF-IDF baseline, the fine-tuning setup and experiments (including the class-weighted loss and the sequence-length comparison), the evaluation and error analysis, and the Gradio app and deployment.
 
 ## References
 
