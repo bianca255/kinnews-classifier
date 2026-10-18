@@ -1,6 +1,6 @@
 # Kinyarwanda News Topic Classification (KINNEWS + AfroXLMR)
 
-Task: **text classification for an African language**: assign a Kinyarwanda news article to one of 14 topics.
+Task: **text classification for an African language**: assigning a Kinyarwanda news article to one of 14 topics.
 
 ## Project links
 
