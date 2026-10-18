@@ -7,7 +7,7 @@ Task: **text classification for an African language**: assign a Kinyarwanda news
 | Resource | Link |
 |---|---|
 | GitHub repository | TODO: https://github.com/bianca255/kinnews-classifier |
-| Demo video | TODO: add video URL |
+| Demo video | https://youtu.be/tABa3ULu59s |
 | Fine-tuned model (Hugging Face) | https://huggingface.co/Bianca255/kinnews-afroxlmr |
 | Live system | https://kin-news-topics-bianca255.streamlit.app |
 
